@@ -11,6 +11,14 @@ body {
   flex-direction: column;
   height: 100vh;
 }
+body > h1 {
+  margin-bottom: 10px;
+}
+#form-player {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
 
 main {
   width: fit-content;
@@ -34,7 +42,6 @@ main button {
 
 #winner {
   display: none;
-  flex-direction: column;
   gap: 5px;
   align-items: center;
   justify-content: center;

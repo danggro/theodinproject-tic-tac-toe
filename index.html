@@ -8,21 +8,34 @@
   </head>
   <body>
     <h1>Tic Tac Toe</h1>
-    <main>
-      <button id="1" onclick="gameController.action(event)"></button>
-      <button id="2" onclick="gameController.action(event)"></button>
-      <button id="3" onclick="gameController.action(event)"></button>
-      <button id="4" onclick="gameController.action(event)"></button>
-      <button id="5" onclick="gameController.action(event)"></button>
-      <button id="6" onclick="gameController.action(event)"></button>
-      <button id="7" onclick="gameController.action(event)"></button>
-      <button id="8" onclick="gameController.action(event)"></button>
-      <button id="9" onclick="gameController.action(event)"></button>
-    </main>
+    <h2 id="turn"></h2>
     <div id="winner" hidden="true">
-      <h2>X Win</h2>
-      <button onclick="gameController.reset()">Reset</button>
+      <h2></h2>
+      <button onclick="gameController.reset()">Play Again</button>
     </div>
+    <div id="form-player">
+      <div>
+        <label for="player1">Player 1 Name</label>
+        <input type="text" id="player1" name="player1" required />
+      </div>
+      <div>
+        <label for="player2">Player 2 Name</label>
+        <input type="text" id="player2" name="player2" required />
+      </div>
+      <button onclick="gameController.startGame()">Start Game</button>
+    </div>
+    <main>
+      <button id="1" onclick="gameController.action(event)" disabled></button>
+      <button id="2" onclick="gameController.action(event)" disabled></button>
+      <button id="3" onclick="gameController.action(event)" disabled></button>
+      <button id="4" onclick="gameController.action(event)" disabled></button>
+      <button id="5" onclick="gameController.action(event)" disabled></button>
+      <button id="6" onclick="gameController.action(event)" disabled></button>
+      <button id="7" onclick="gameController.action(event)" disabled></button>
+      <button id="8" onclick="gameController.action(event)" disabled></button>
+      <button id="9" onclick="gameController.action(event)" disabled></button>
+    </main>
+
     <script src="script.js"></script>
   </body>
 </html>
